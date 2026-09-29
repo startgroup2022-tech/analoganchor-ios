@@ -1,0 +1,20 @@
+# macOS / Xcode
+.DS_Store
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.moved-aside
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Generated Xcode project (regenerate with `xcodegen generate`)
+AnalogAnchor.xcodeproj/
+*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+
+# Secrets / signing
+*.mobileprovision
+*.p12

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Analog Anchor</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.8.7</string>
+	<key>CFBundleVersion</key>
+	<string>38</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string></string>
+	</dict>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Dark</string>
+
+	<!-- Custom URL scheme for deep links / emergency tools (mirrors Android intents) -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.analoganchor.app</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>analoganchor</string>
+			</array>
+		</dict>
+	</array>
+
+	<!-- NFC: routes anchor / fajr tags without a chooser, like the Android MIME filters -->
+	<key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
+	<array>
+		<string>D2760000850101</string>
+	</array>
+	<key>NFCReaderUsageDescription</key>
+	<string>Analog Anchor reads your Anchor and Fajr NFC tags to validate physical presence at your desk and at your bedside. No tag data leaves your device.</string>
+
+	<!-- Usage descriptions: added ONLY for features implemented in Phase 2 -->
+	<key>NSCameraUsageDescription</key>
+	<string>Analog Anchor uses the camera to capture your analog whiteboard photo as proof of a completed focus ritual.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Analog Anchor uses your location to calculate accurate prayer times and to verify you are at your designated mosque or outdoor sanctuary.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Analog Anchor uses motion and step data for the morning wake proof, walking sessions, and to detect when your phone has been picked up during a focus ritual.</string>
+
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-peripheral</string>
+	</array>
+
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Analog Anchor uses Bluetooth only while the Partner screen is open, to find a nearby accountability partner and start a shared outdoor session. Nothing is stored or shared afterwards.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Analog Anchor advertises your active session to a nearby partner during a shared outdoor walk.</string>
+
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+</dict>
+</plist>
